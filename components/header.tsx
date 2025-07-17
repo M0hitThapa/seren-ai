@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { SignIn } from './auth/sign-in-button'
 
 function Header() {
   return (
@@ -11,6 +12,7 @@ function Header() {
                 <Link href="/" className='flex items-center gap-2'>
                 <span>Aura 3.0</span>
                 </Link>
+                <SignIn />
             </div>
         </header>
 
