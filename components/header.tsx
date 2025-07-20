@@ -21,9 +21,9 @@ function Header() {
 
             <div className='flex h-16 items-center justify-between'>
                 <Link href="/" className='flex items-center gap-2'>
-                <div className='flex flex-col'>
+                <div className='flex gap-2 '>
                   <ScanHeart />
-                <span>SerenAI</span>
+                <span className='text-xl font-semibold text-shadow-sm'>SerenAI</span>
                 </div>
                 </Link>
 
@@ -45,8 +45,8 @@ function Header() {
                
                <div className='flex items-center gap-3'>
                  <ThemeToggle />
-                <SignIn /> 
-                <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <SignIn className='text-[14px] font-semibold px-4 py-3 bg-blue-500 rounded-[7px] text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] cursor-pointer [text-shadow:0px_0.5px_1px_rgba(0,0,0,0.25)]' /> 
+                <Button variant="ghost" size="icon" className="md:hidden " onClick={() => setIsMenuOpen(!isMenuOpen)}>
                   {isMenuOpen ? (
                     <X className='h-5 w-5' />
                   ): (
