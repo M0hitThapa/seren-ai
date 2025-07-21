@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
    <div className="flex flex-col min-h-screen overflow-hidden bg-gradient-to-b from-gray-100 to-gray-100/50">
+    
     <Hero />
     <div className="relative w-full flex justify-center pb-[100px]">
      

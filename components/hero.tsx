@@ -1,8 +1,11 @@
+'use client'
+import Image from 'next/image';
 import React from 'react'
 
 export const Hero = () => {
   return (
-    <div className="px-[80px] py-[50px] mt-32 max-w-[1000px] m-auto">
+    <div className="px-[80px] py-[50px] mt-32 max-w-[1300px] m-auto">
+      
       <div className="text-[12px] font-semibold max-w-[400px] rounded-full bg-[#e4e8f4] px-3 py-2 w-fit mx-auto border border-[#d1cdcd] flex items-center justify-center hover:bg-[#e5e5e5] transition-colors duration-200 ease-out">
         <span>Private. Secure. Available 24/7.</span>
         <svg width="16" height="16" fill="none" className="ml-1">
@@ -17,9 +20,11 @@ export const Hero = () => {
         </svg>
       </div>
 
-      <h1 className="mt-[50px] text-[62px] font-medium tracking-[-0.6px] leading-[1.1] text-center text-[#232222] text-shadow-md">
+      <h1 className="mt-[50px] text-[62px] font-medium tracking-[-0.6px] leading-[1.1] text-center bg-gradient-to-b from-[#232222] to-[#444242] bg-clip-text text-transparent text-shadow-md flex gap-5">
+        <Image src="/icon1.png" alt="brain image" height={100} width={100} className='mt-24 hidden md:flex '  />
         Your AI-Powered Mental Health Companion
-      </h1>
+        <Image src="/icon2.png" alt="brain image" height={100} width={100} className="mt-24 hidden md:flex"  />
+      </h1> 
 
       <p className="text-[16px] text-[#5b5a5a] leading-[27px] text-center max-w-[540px] mx-auto mt-[15px]">
         Talk to a trained AI therapist anytime you need support. No waiting rooms, no judgments — just thoughtful, personalized conversations.
