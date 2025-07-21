@@ -15,7 +15,7 @@ function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <div className='w-full fixed top-0 z-50 bg-background/95 backdrop:blur-2xl'>
+    <div className='w-full fixed top-0 z-50 bg-gray-100 backdrop:blur-2xl'>
         <div className='absolute inset-0 border-b border-primary/10'></div>
         <header className='relative max-w-6xl mx-auto px-4'>
 
@@ -45,7 +45,7 @@ function Header() {
                
                <div className='flex items-center gap-3'>
                  <ThemeToggle />
-                <SignIn className='text-[14px] font-semibold px-4 py-3 bg-blue-500 rounded-[7px] text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] cursor-pointer [text-shadow:0px_0.5px_1px_rgba(0,0,0,0.25)]' /> 
+                <SignIn className='text-[14px] font-semibold px-4 py-3 bg-blue-500 hover:bg-blue-600 rounded-[7px] text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] cursor-pointer [text-shadow:0px_0.5px_1px_rgba(0,0,0,0.25)]' /> 
                 <Button variant="ghost" size="icon" className="md:hidden " onClick={() => setIsMenuOpen(!isMenuOpen)}>
                   {isMenuOpen ? (
                     <X className='h-5 w-5' />

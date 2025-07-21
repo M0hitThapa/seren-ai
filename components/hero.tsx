@@ -17,7 +17,7 @@ export const Hero = () => {
         </svg>
       </div>
 
-      <h1 className="mt-[50px] text-[62px] font-medium tracking-[-0.6px] leading-[1.1] text-center text-[#232222]">
+      <h1 className="mt-[50px] text-[62px] font-medium tracking-[-0.6px] leading-[1.1] text-center text-[#232222] text-shadow-md">
         Your AI-Powered Mental Health Companion
       </h1>
 

@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function LoginPage() {
   return (
-    <div className="grid min-h-svh lg:grid-cols-2 pt-15">
+    <div className="grid min-h-svh lg:grid-cols-2 pt-15 bg-gradient-to-b from-gray-100 to-gray-100/50">
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
         
@@ -18,7 +18,7 @@ export default function LoginPage() {
       </div>
       <div className="bg-muted relative hidden lg:block">
         <Image
-          src="/brain.jpeg"
+          src="/brain1.jpeg"
           alt="Image"
           height={700}
           width={700}
