@@ -21,9 +21,9 @@ export const Hero = () => {
       </div>
 
       <h1 className="mt-[50px] text-[62px] font-medium tracking-[-0.6px] leading-[1.1] text-center bg-gradient-to-b from-[#232222] to-[#444242] bg-clip-text text-transparent text-shadow-md flex gap-5">
-        <Image src="/icon1.png" alt="brain image" height={100} width={100} className='mt-24 hidden md:flex '  />
+        <Image src="/icon1.png" alt="brain image" height={100} width={100} className=' h-32 w-32 hidden md:flex '  />
         Your AI-Powered Mental Health Companion
-        <Image src="/icon2.png" alt="brain image" height={100} width={100} className="mt-24 hidden md:flex"  />
+        <Image src="/icon2.png" alt="brain image" height={100} width={100} className="h-32 w-32 hidden md:flex"  />
       </h1> 
 
       <p className="text-[16px] text-[#5b5a5a] leading-[27px] text-center max-w-[540px] mx-auto mt-[15px]">
