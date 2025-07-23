@@ -37,7 +37,7 @@ export function LoginForm({
               Forgot your password?
             </a>
           </div>
-          <Input id="password" type="password" className="shadow-md shadow-gray-200" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <Input id="password" type="password" className="shadow-md shadow-gray-200" value={password} placeholder="********" onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <Button type="submit" className="w-full text-[14px] font-semibold  bg-blue-500 hover:bg-blue-600 rounded-[7px] text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] cursor-pointer [text-shadow:0px_0.5px_1px_rgba(0,0,0,0.25)]">
           Login

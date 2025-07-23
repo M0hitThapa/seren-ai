@@ -1,10 +1,16 @@
 'use client'
 import Image from 'next/image';
 import React from 'react'
+import {motion} from "motion/react"
 
 export const Hero = () => {
   return (
-    <div className="px-[80px] py-[50px] mt-32 max-w-[1300px] m-auto">
+    <motion.div
+      initial={{opacity:0, x: -20 }}
+            animate={{opacity:1, x:0}}
+            transition={{duration:0.6}}
+            
+    className="px-[80px] py-[50px] mt-32 max-w-[1300px] m-auto">
       
       <div className="text-[12px] font-semibold max-w-[400px] rounded-full bg-[#e4e8f4] px-3 py-2 w-fit mx-auto border border-[#d1cdcd] flex items-center justify-center hover:bg-[#e5e5e5] transition-colors duration-200 ease-out">
         <span>Private. Secure. Available 24/7.</span>
@@ -49,6 +55,6 @@ export const Hero = () => {
           </svg>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
