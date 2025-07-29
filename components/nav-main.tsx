@@ -29,7 +29,7 @@ export function NavMain({
             <SidebarMenuItem key={item.title}>
               <SidebarMenuButton tooltip={item.title}>
                 {item.icon && <item.icon />}
-                <span>{item.title}</span>
+                <span className=" px-5 py-2 text-lg text-shadow-md">{item.title}</span>
               </SidebarMenuButton>
             </SidebarMenuItem>
           ))}
