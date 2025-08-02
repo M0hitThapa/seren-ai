@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/site-header";
 import { ChartAreaInteractive } from "@/components/chart-area-interactive";
 
 
+
 export default function DashboardPage() {
 
     
@@ -32,6 +33,13 @@ export default function DashboardPage() {
               <div className="px-4 lg:px-6">
                 <ChartAreaInteractive />
               </div>
+              <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+        <div className='lg:col-span-3 space-y-6'>
+ 
+        </div>
+
+    </div>
+              
             </div>
           </div>
         </div>

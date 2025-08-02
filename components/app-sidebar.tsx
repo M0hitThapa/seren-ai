@@ -38,7 +38,7 @@ const data = {
     },
     {
       title: "Track Mood",
-      url: "#",
+      url: "/mood",
       icon: ListIcon,
     },
     {
