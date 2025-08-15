@@ -11,7 +11,7 @@ const games = [
     description: "Follow calming breathing exercises with visual guidance",
     icon: Wind,
     color: "text-blue-500",
-    bgColor: "bg-blue-500/50",
+    bgColor: "bg-gradient-to-r from-emerald-100 to-emerald-400",
     duration: "5 mins"
   },
   {
@@ -20,7 +20,7 @@ const games = [
     description: "Cultivate a digital garden by planting trees and designing calming spaces",
     icon: Leaf,
     color: "text-green-600",
-    bgColor: "bg-green-600/50",
+    bgColor: "bg-gradient-to-r from-rose-100 to-rose-400",
     duration: "10 mins"
   },
   {
@@ -29,7 +29,7 @@ const games = [
     description: "Immerse yourself in forest ambience with birdsong and rustling leaves",
     icon: TreePine,
     color: "text-emerald-700",
-    bgColor: "bg-emerald-700/50",
+    bgColor: "bg-gradient-to-r from-cyan-100 to-cyan-400",
     duration: "7 mins"
   },
   {
@@ -38,7 +38,7 @@ const games = [
     description: "Relax to the sound of gentle ocean waves and sea breeze",
     icon: Waves,
     color: "text-sky-500",
-    bgColor: "bg-sky-500/50",
+    bgColor: "bg-gradient-to-r from-violet-100 to-violet-400",
     duration: "8 mins"
   }
 ];
@@ -69,7 +69,7 @@ export const AnxietyGames = ({ onGamePlayed }: AnxietyGamesProps): JSX.Element =
 
   return (
     <>
-      <Card className="border-primary/10">
+      <Card className="border-primary/10 ">
         <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             <Gamepad className="h-5 w-5 text-primary" />
@@ -80,14 +80,14 @@ export const AnxietyGames = ({ onGamePlayed }: AnxietyGamesProps): JSX.Element =
           </CardDescription>
         </CardHeader>
         {/* Render buttons for each game */}
-        <div className="p-4 flex gap-4 flex-wrap">
+        <div className="p-4 flex gap-10 flex-wrap mx-auto ">
           {games.map((game) => {
             const Icon = game.icon;
             return (
               <button
                 key={game.id}
                 onClick={() => handleGameStart(game.id)}
-                className={`p-4 rounded-md ${game.bgColor} text-white flex flex-col items-start`}
+                className={`p-4 rounded-md ${game.bgColor} text-slate-700   flex flex-col border-2 shadow-md border-white/50 lg:w-72 lg:h-48 md:w-56 md:h-32 sm:w-48 sm:h-28  items-start `}
               >
                 <Icon className={`h-6 w-6 ${game.color}`} />
                 <span className="font-semibold">{game.title}</span>
