@@ -23,9 +23,9 @@ export default function DashboardPage() {
         } as React.CSSProperties
       }
     >
-      <AppSidebar variant="inset" className="pt-16" />
+      <AppSidebar  className="pt-16 " />
       
-      <SidebarInset className="bg-gradient-to-b from-gray-100 to-gray-100/50 ">
+      <SidebarInset>
       
         <SiteHeader />
         <div className="flex flex-1 flex-col">
@@ -33,15 +33,12 @@ export default function DashboardPage() {
             <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
               <SectionCards />
               
-              <div className="px-4 lg:px-6">
+              <div className="grid grid-cols-2 gap-2 px-2">
                 <ChartAreaInteractive />
+                <AnxietyGames />
               </div>
               <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
-        <div className='lg:col-span-3 space-y-6'>
-          <AnxietyGames />
-          
- 
-        </div>
+      
 
     </div>
               
