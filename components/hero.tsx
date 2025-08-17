@@ -10,13 +10,13 @@ export const Hero = () => {
             animate={{opacity:1, x:0}}
             transition={{duration:0.6}}
             
-    className="px-[80px] py-[10px] mt-24 max-w-[1300px] m-auto">
+    className="px-[80px] py-[10px] mt-24 max-w-[1500px] m-auto">
       
-      <div className="text-[12px] font-semibold max-w-[400px] rounded-full bg-[#e4e8f4] px-3 py-1 w-fit mx-auto border border-[#d1cdcd] flex items-center justify-center hover:bg-[#e5e5e5] transition-colors duration-200 ease-out">
+      <div className="text-[12px] font-semibold max-w-[400px] rounded-full   px-3 py-1 w-fit mx-auto border border-[#d1cdcd] flex items-center justify-center  transition-colors duration-200 ease-out">
         <span>Private. Secure. Available 24/7.</span>
         <svg width="16" height="16" fill="none" className="ml-1">
           <path
-            stroke="#1E1F25"
+            stroke="#B2BEB5"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeOpacity=".5"

@@ -12,7 +12,7 @@ const games = [
     icon: Wind,
     color: "text-blue-600",
     badge: "bg-blue-600/10 text-blue-700",
-    bgColor: "bg-gradient-to-tl from-cyan-300 to-white",
+    bgColor: "bg-gradient-to-tl from-cyan-300 to-white ",
     duration: "5 mins",
   },
   {
@@ -83,7 +83,7 @@ export const AnxietyGames = ({ onGamePlayed }: AnxietyGamesProps): JSX.Element =
         </CardHeader>
 
         {/* 2x2 perfect square grid */}
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 p-4 pt-0 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-3 sm:gap-4 p-4 pt-0 max-w-3xl mx-auto">
           {games.map((game) => {
             const Icon = game.icon;
             const isActive = selectedGame === game.id;
