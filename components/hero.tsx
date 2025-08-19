@@ -10,7 +10,8 @@ export const Hero = () => {
             animate={{opacity:1, x:0}}
             transition={{duration:0.6}}
             
-    className="px-[80px] py-[10px] mt-24 max-w-[1500px] m-auto">
+    className="px-[80px] py-[10px] mt-24 max-w-[1500px] m-auto flex flex-col items-center justify-center">
+      
       
       <div className="text-[12px] font-semibold max-w-[400px] rounded-full   px-3 py-1 w-fit mx-auto border border-[#d1cdcd] flex items-center justify-center  transition-colors duration-200 ease-out">
         <span>Private. Secure. Available 24/7.</span>
@@ -37,7 +38,7 @@ export const Hero = () => {
       </p>
 
       <div className="flex justify-center mt-[20px] gap-[10px]">
-        <button className="text-[14px] font-semibold px-4 py-3 bg-[#8B004B] hover:opacity-90 transiiton-all duration-300 rounded-[7px] text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] cursor-pointer [text-shadow:0px_0.5px_1px_rgba(0,0,0,0.25)]">
+        <button className="text-[14px] font-semibold px-4 py-3 bg-[#8B004B] hover:opacity-90 transiiton-all duration-300 rounded-[5px] text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] cursor-pointer [text-shadow:0px_0.5px_1px_rgba(0,0,0,0.25)]">
           Start Your Session
         </button>
 

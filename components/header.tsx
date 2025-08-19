@@ -46,7 +46,7 @@ function Header() {
                
                <div className='flex items-center gap-3'>
                  <ThemeToggle />
-                <SignIn className='text-[14px] font-semibold px-4 py-3 bg-[#8B004B] hover:bg-[#7e0244] rounded-[7px] text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] cursor-pointer [text-shadow:0px_0.5px_1px_rgba(0,0,0,0.25)]' /> 
+                <SignIn className='text-[14px] font-semibold px-4 py-3 bg-[#8B004B] hover:bg-[#7e0244] rounded-[5px] text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] cursor-pointer [text-shadow:0px_0.5px_1px_rgba(0,0,0,0.25)]' /> 
                 <Button variant="ghost" size="icon" className="md:hidden " onClick={() => setIsMenuOpen(!isMenuOpen)}>
                   {isMenuOpen ? (
                     <X className='h-5 w-5' />
